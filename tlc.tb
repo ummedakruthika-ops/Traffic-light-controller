@@ -1,0 +1,18 @@
+module tb_traffic_light;
+    reg clk, reset;
+    wire [2:0] lights;
+
+    traffic_light_controller uut (.clk(clk), .reset(reset), .lights(lights));
+
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; // 10 time units clock period
+    end
+
+    initial begin
+        reset = 1; #10;
+        reset = 0;
+
+        #200 $finish; // run simulation for 200 time units
+    end
+endmodule
