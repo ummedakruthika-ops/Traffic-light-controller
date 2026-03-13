@@ -34,26 +34,6 @@ State	Light Active	Duration
 S0	Green	Configurable
 S1	Yellow	Configurable
 S2	Red	Configurable
-State Transition Diagram
-        +--------+
-        | GREEN  |
-        +--------+
-            |
-            v
-        +--------+
-        | YELLOW |
-        +--------+
-            |
-            v
-        +--------+
-        |  RED   |
-        +--------+
-            |
-            v
-          GREEN
-
-The controller cycles through these states continuously.
-
 
 ▶️ How It Works
 
